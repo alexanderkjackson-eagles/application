@@ -14,7 +14,7 @@
 	<div class="box">
 	<?php AdminController::checkUpdate() ?>
 	</div>
-	<?php include '/var/www/html/application/our-html/Admin Forms/admin.html' ?>
+	<?php include '/var/www/html/our-html/Admin Forms/admin.html' ?>
 <!--        <div>
 //            <table class="overview-table">
 //                <thead>
