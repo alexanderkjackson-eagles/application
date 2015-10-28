@@ -18,18 +18,11 @@
 
         <!-- navigation -->
         <ul class="navigation">
-	<?php  // Only Display Home button if the user is not logged in and doesn't have the nav-right function button.
-	 	// TODO: Clean this shit up.
-		$userType = Session::get("user_account_type");
-	    if ($userType != 1 && $userType != 2 && $userType != 7) {
-		echo '<li';
-		if (View::checkForActiveController($filename, "index")) { echo ' class="active" '; } echo '>';
-		echo '<a href=' . Config::get('URL') . 'index/index>Home</a></li>';
-	    }
-	?>
+	<!--
 	    <li <?php if (View::checkForActiveController($filename, "profile")) { echo ' class="active" '; } ?> >
                 <a href="<?php echo Config::get('URL'); ?>profile/index">Profiles</a>
             </li>
+        -->
             <?php if (Session::userIsLoggedIn()) { ?>
 	    <!--
                 <li <?php if (View::checkForActiveController($filename, "dashboard")) { echo ' class="active" '; } ?> >
