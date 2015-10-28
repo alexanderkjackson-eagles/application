@@ -12,7 +12,7 @@
             This controller/action/view checks for an update and automatically installs it if found. Additionally, it provides the basic admin page to demonstrate use cases for administrators (researchers).
         </div>
 	<div class="box">
-	<form method="get" action="/">
+	<form method="get" action="/admin/">
 		<button type="submit">test</button>
 	</form>
 	<?php 
