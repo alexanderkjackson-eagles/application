@@ -33,11 +33,11 @@ class AdminController extends Controller
 		Redirect::to("admin");
 	}
 	public static function checkUpdate()
-	{ /* Checks if an update is available and offers to update. TODO: Autoupdate on FORCE_UPDATE file's presence. */
-		echo proc_open("git fetch", $output, $res);
+	{ /* Checks if an update is available and updates if so. TODO: Autoupdate on FORCE_UPDATE file's presence and provide optional update otherwise.*/
+		exec("git fetch", $output, $res);
 		if (exec("git rev-parse HEAD") != exec("git rev-parse @{u}")){
-			echo "<bold>Update available.</bold>\n";
-			echo exec("git pull");
+			echo "<center><bold>Update available.</bold></center>\n";
+			exec("git pull");
 		}
 		else
 			echo "No update available";
