@@ -14,7 +14,7 @@
         </div>
 	-->
 	<div class="box">
-	<?php AdminController::checkUpdate() ?>
+	<!-- <?php AdminController::checkUpdate() ?> -->
 	<?php 
 		if(isset($_GET['page'])){ // If ?page= exists
 			$var = $_GET['page'];
