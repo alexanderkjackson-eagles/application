@@ -13,7 +13,7 @@
         </div>
 	<div class="box">
 	<form method="get" action="/admin/">
-		<button type="submit">test</button>
+		<button type="submit" value="manageSessions">Manage sessions</button>
 	</form>
 	<?php 
 	//	$vars = $_POST["page"];
