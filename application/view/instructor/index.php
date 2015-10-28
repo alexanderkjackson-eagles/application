@@ -9,8 +9,16 @@
         <h3>What happens here ?</h3>
 
         <div>
-	This section will contain information and features only accessible to instructors. This should populate with pupils. This is also the first example of an added page and user type.
+	This section will contain information and features only accessible to instructors. This should populate with pupils.
         </div>
+	<?php 
+		if(isset($_GET['page'])){
+			$var = $_GET['page'];
+			include '/var/www/html/our-html/Instructor Forms/' . $var;
+		}
+		else
+			include '/var/www/html/our-html/Instructor Forms/instructor.html';
+	?>
         <div>
             <table class="overview-table">
                 <thead>
