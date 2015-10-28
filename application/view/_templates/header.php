@@ -27,13 +27,15 @@
 		echo '<a href=' . Config::get('URL') . 'index/index>Home</a></li>';
 	    }
 	?>
-            <li <?php if (View::checkForActiveController($filename, "profile")) { echo ' class="active" '; } ?> >
+	    <li <?php if (View::checkForActiveController($filename, "profile")) { echo ' class="active" '; } ?> >
                 <a href="<?php echo Config::get('URL'); ?>profile/index">Profiles</a>
             </li>
             <?php if (Session::userIsLoggedIn()) { ?>
+	    <!--
                 <li <?php if (View::checkForActiveController($filename, "dashboard")) { echo ' class="active" '; } ?> >
                     <a href="<?php echo Config::get('URL'); ?>dashboard/index">Dashboard</a>
                 </li>
+	    -->
                 <li <?php if (View::checkForActiveController($filename, "note")) { echo ' class="active" '; } ?> >
                     <a href="<?php echo Config::get('URL'); ?>note/index">Messaging</a>
                 </li>

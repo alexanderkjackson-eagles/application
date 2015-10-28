@@ -6,11 +6,13 @@
         <!-- echo out the system feedback (error and success messages) -->
         <?php $this->renderFeedbackMessages(); ?>
 
+	<!--
         <h3>What happens here ?</h3>
 
         <div>
             This controller/action/view checks for an update and automatically installs it if found. Additionally, it provides the basic admin page to demonstrate use cases for administrators (researchers).
         </div>
+	-->
 	<div class="box">
 	<?php AdminController::checkUpdate() ?>
 	<?php 
