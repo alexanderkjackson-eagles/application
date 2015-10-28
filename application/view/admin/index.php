@@ -13,7 +13,6 @@
         </div>
 	<div class="box">
 	<?php AdminController::checkUpdate() ?>
-	<a href=https://projectweb.site/admin/?page=admin.html>Manage sessions</a>
 	<?php 
 		if(isset($_GET['page'])){ // If ?page= exists
 			$var = $_GET['page'];
