@@ -12,9 +12,8 @@
             This controller/action/view shows a list of all users in the system. with the ability to soft delete a user
             or suspend a user. Also, it checks for an update from the git repository and offers to upgrade the software if it is available.
         </div>
+	<div class="box">
 	<?php AdminController::checkUpdate() ?>
-	<div>
-		<button m="update-">
 	</div>
         <div>
             <table class="overview-table">

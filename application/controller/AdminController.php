@@ -40,6 +40,6 @@ class AdminController extends Controller
 	exec("git pull");
 	}
 	else
-		echo "No update available.\n";
+		echo "No update available";
 	}
 }
