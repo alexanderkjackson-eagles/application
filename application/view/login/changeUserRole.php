@@ -7,25 +7,32 @@
     <div class="box">
         <h2>Change account type</h2>
         <p>
-            This page is a basic implementation of the upgrade-process.
-            User can click on that button to upgrade their accounts from
-            "basic account" to "premium account". This script simple offers
-            a click-able button that will upgrade/downgrade the account instantly.
-            In a real world application you would implement something like a
-            pay-process.
+	This page will demonstrate the ability to enroll or drop instructional sessions (classes). Once part of a class, a user will be able to view and contact the other student profiles, minus the vital tag data. They will be able to message the instructor/students via the site, but they will have no email privileges. They will also have access to class sessions, which will consist of sets of questions. Should the instructor want participation to be mandatory, they will be able to view assignments and due dates, which themselves will consist of completing a certain number of questions from selections.
+	In addition to this, soon-to-be instructors will be able to enter a code to be elevate to the instructor user type. The same is for researchers/site administrators.
         </p>
 	    <p>
-		    Please note: This whole process has been renamed from AccountType (v3.0) to UserRole (v3.1).
 	    </p>
 
-        <h2>Currently your account type is: <?php echo Session::get('user_account_type'); ?></h2>
+        <h2>Currently, your account type is: <?php $userType = Session::get('user_account_type'); 
+		switch(Session::get('user_account_type')) {
+			case 1:
+				echo "Pupil.";
+				break;
+			case 2:
+				echo "Instructor.";
+				break;
+			case 7:
+				echo "Administrator (Research-type)";
+				break;
+	
+			default:
+				echo "Invalid user type. Contact webmaster@projectweb.site";
+			}
+	?></h2>
         <!-- basic implementation for two account types: type 1 and type 2 -->
-	    <form action="<?php echo Config::get('URL'); ?>login/changeUserRole_action" method="post">
-            <?php if (Session::get('user_account_type') == 1) { ?>
-                <input type="submit" name="user_account_upgrade" value="Upgrade my account (to Premium User)" />
-	        <?php } else if (Session::get('user_account_type') == 2) { ?>
-	            <input type="submit" name="user_account_downgrade" value="Downgrade my account (to Basic User)" />
-	        <?php } ?>
-	    </form>
+	<form action=TODO method="post">
+		Enter code:
+		<input type="text" name="code">
+	</form>
     </div>
 </div>

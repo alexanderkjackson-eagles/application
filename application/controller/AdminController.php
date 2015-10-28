@@ -36,10 +36,10 @@ class AdminController extends Controller
 	{ /* Checks if an update is available and updates if so. TODO: Autoupdate on FORCE_UPDATE file's presence and provide optional update otherwise.*/
 		exec("git fetch", $output, $res);
 		if (exec("git rev-parse HEAD") != exec("git rev-parse @{u}")){
-			echo "<center><bold>Update available.</bold></center>\n";
+			echo "<center><strong>Update available; Automatically installed. </strong></center>\n";
 			exec("git pull");
 		}
 		else
-			echo "<center><bold>No update available</bold></center>";
+			echo "<center><strong>Application version is current.</strong></center>";
 		}
 }

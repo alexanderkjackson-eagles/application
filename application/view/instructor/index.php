@@ -21,6 +21,7 @@
 	?>
         <div>
             <table class="overview-table">
+	    	<center><strong>Students</center></strong>
                 <thead>
                 <tr>
                     <td>Id</td>
