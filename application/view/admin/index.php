@@ -16,7 +16,7 @@
 		<button type="submit" value="page=manageSessions">Manage sessions</button>
 	</form>
 	<?php 
-		$vars = $_GET['page']
+		$vars = $_GET['page'];
 		echo $vars;
 	?>
 	<?php AdminController::checkUpdate() ?>
