@@ -34,8 +34,7 @@ class AdminController extends Controller
 	}
 	public static function checkUpdate()
 	{ /* Checks if an update is available and offers to update. TODO: Autoupdate on FORCE_UPDATE file's presence. */
-		echo exec("git fetch", $output, $res);
-		echo $res;
+		echo proc_open("git fetch", $output, $res);
 		if (exec("git rev-parse HEAD") != exec("git rev-parse @{u}")){
 			echo "<bold>Update available.</bold>\n";
 			echo exec("git pull");
