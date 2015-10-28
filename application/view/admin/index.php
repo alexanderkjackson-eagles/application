@@ -12,6 +12,10 @@
             This controller/action/view checks for an update and automatically installs it if found. Additionally, it provides the basic admin page to demonstrate use cases for administrators (researchers).
         </div>
 	<div class="box">
+	<?php 
+		$vars = $_POST["page"];
+		echo $vars;
+	?>
 	<?php AdminController::checkUpdate() ?>
 	</div>
 	<?php include '/var/www/html/our-html/Admin Forms/admin.html' ?>
