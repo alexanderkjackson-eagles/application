@@ -17,10 +17,10 @@
 	<?php 
 		if(isset($_GET['page'])){ // If ?page= exists
 			$var = $_GET['page'];
-			include '/var/www/html/our-html/Admin Forms/' . $var;
+			include '/var/www/html/our-html/Admin\ Forms/' . $var;
 		}
 		else
-			include '/var/www/html/our-html/Admin Forms/admin.html';
+			include '/var/www/html/our-html/Admin\ Forms/admin.html';
 	?>
 	</div>
 <!--        <div>
