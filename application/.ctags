@@ -1,0 +1,408 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AdminController	controller/AdminController.php	/^class AdminController extends Controller$/;"	c
+AdminModel	model/AdminModel.php	/^class AdminModel$/;"	c
+AdminModel	model/InstructorModel.php	/^class AdminModel$/;"	c
+Application	core/Application.php	/^class Application$/;"	c
+Auth	core/Auth.php	/^class Auth$/;"	c
+AvatarModel	model/AvatarModel.php	/^class AvatarModel$/;"	c
+CaptchaModel	model/CaptchaModel.php	/^class CaptchaModel$/;"	c
+Config	core/Config.php	/^class Config$/;"	c
+Controller	core/Controller.php	/^class Controller$/;"	c
+Csrf	core/Csrf.php	/^class Csrf {$/;"	c
+DashboardController	controller/DashboardController.php	/^class DashboardController extends Controller$/;"	c
+DatabaseFactory	core/DatabaseFactory.php	/^class DatabaseFactory$/;"	c
+Encryption	core/Encryption.php	/^class Encryption{$/;"	c
+Environment	core/Environment.php	/^class Environment$/;"	c
+ErrorController	controller/ErrorController.php	/^class ErrorController extends Controller$/;"	c
+Filter	core/Filter.php	/^class Filter$/;"	c
+IndexController	controller/IndexController.php	/^class IndexController extends Controller$/;"	c
+InstructorController	controller/InstructorController.php	/^class InstructorController extends Controller$/;"	c
+LoginController	controller/LoginController.php	/^class LoginController extends Controller$/;"	c
+LoginModel	model/LoginModel.php	/^class LoginModel$/;"	c
+Mail	core/Mail.php	/^class Mail$/;"	c
+NoteController	controller/NoteController.php	/^class NoteController extends Controller$/;"	c
+NoteModel	model/NoteModel.php	/^class NoteModel$/;"	c
+PasswordResetModel	model/PasswordResetModel.php	/^class PasswordResetModel$/;"	c
+ProfileController	controller/ProfileController.php	/^class ProfileController extends Controller$/;"	c
+Redirect	core/Redirect.php	/^class Redirect$/;"	c
+RegistrationModel	model/RegistrationModel.php	/^class RegistrationModel$/;"	c
+Request	core/Request.php	/^class Request$/;"	c
+Session	core/Session.php	/^class Session$/;"	c
+Text	core/Text.php	/^class Text$/;"	c
+UserModel	model/UserModel.php	/^class UserModel$/;"	c
+UserRoleModel	model/UserRoleModel.php	/^class UserRoleModel$/;"	c
+View	core/Controller.php	/^        $this->View = new View();$/;"	v
+View	core/Controller.php	/^    public $View;$/;"	v
+View	core/View.php	/^class View$/;"	c
+XSSFilter	core/Filter.php	/^    public static function XSSFilter(&$value)$/;"	f
+_SESSION	model/LoginModel.php	/^        $_SESSION = array();$/;"	v
+__construct	controller/AdminController.php	/^    public function __construct()$/;"	f
+__construct	controller/DashboardController.php	/^    public function __construct()$/;"	f
+__construct	controller/ErrorController.php	/^    public function __construct()$/;"	f
+__construct	controller/IndexController.php	/^    public function __construct()$/;"	f
+__construct	controller/InstructorController.php	/^    public function __construct()$/;"	f
+__construct	controller/LoginController.php	/^    public function __construct()$/;"	f
+__construct	controller/NoteController.php	/^    public function __construct()$/;"	f
+__construct	controller/ProfileController.php	/^    public function __construct()$/;"	f
+__construct	core/Application.php	/^    public function __construct()$/;"	f
+__construct	core/Controller.php	/^    function __construct()$/;"	f
+__construct	core/Encryption.php	/^    private function __construct(){}$/;"	f
+actionAccountSettings	controller/AdminController.php	/^	public function actionAccountSettings()$/;"	f
+actionAccountSettings	controller/InstructorController.php	/^	public function actionAccountSettings()$/;"	f
+action_name	core/Application.php	/^			$this->action_name = Config::get('DEFAULT_ACTION');$/;"	v
+action_name	core/Application.php	/^            $this->action_name = isset($url[1]) ? $url[1] : null;$/;"	v
+action_name	core/Application.php	/^    private $action_name;$/;"	v
+active_action	core/View.php	/^        $active_action = $split_filename[1];$/;"	v
+active_action	core/View.php	/^        if ($active_controller == $navigation_controller AND $active_action == $navigation_action) {$/;"	v
+active_controller	core/View.php	/^        $active_controller = $split_filename[0];$/;"	v
+add	core/Session.php	/^    public static function add($key, $value)$/;"	f
+all_users_profiles	model/UserModel.php	/^        $all_users_profiles = array();$/;"	v
+body	model/PasswordResetModel.php	/^		$body = Config::get('EMAIL_PASSWORD_RESET_CONTENT') . ' ' . Config::get('URL') .$/;"	v
+body	model/RegistrationModel.php	/^		$body = Config::get('EMAIL_VERIFICATION_CONTENT') . Config::get('URL') . Config::get('EMAIL_VERIFICATION_URL')$/;"	v
+captcha	model/CaptchaModel.php	/^		$captcha = new Gregwar\\Captcha\\CaptchaBuilder;$/;"	v
+car	core/Application.php	/^            \/\/ example: if controller would be "car", then this line would translate into: $this->car = new car();$/;"	v
+changePassword	controller/LoginController.php	/^    public function changePassword()$/;"	f
+changePassword	model/PasswordResetModel.php	/^	public static function changePassword($user_name, $user_password_current, $user_password_new, $user_password_repeat)$/;"	f
+changePassword_action	controller/LoginController.php	/^    public function changePassword_action()$/;"	f
+changeUserRole	controller/LoginController.php	/^    public function changeUserRole()$/;"	f
+changeUserRole	model/UserRoleModel.php	/^	public static function changeUserRole($type)$/;"	f
+changeUserRole_action	controller/LoginController.php	/^    public function changeUserRole_action()$/;"	f
+checkAdminAuthentication	core/Auth.php	/^    public static function checkAdminAuthentication()$/;"	f
+checkAuthentication	core/Auth.php	/^    public static function checkAuthentication()$/;"	f
+checkCaptcha	model/CaptchaModel.php	/^	public static function checkCaptcha($captcha)$/;"	f
+checkForActiveAction	core/View.php	/^    public static function checkForActiveAction($filename, $navigation_action)$/;"	f
+checkForActiveController	core/View.php	/^    public static function checkForActiveController($filename, $navigation_controller)$/;"	f
+checkForActiveControllerAndAction	core/View.php	/^    public static function checkForActiveControllerAndAction($filename, $navigation_controller_and_action)$/;"	f
+checkInstructorAuthentication	core/Auth.php	/^    public static function checkInstructorAuthentication() \/\/ TODO: Should check concurrency for all these functions$/;"	f
+checkSessionConcurrency	core/Auth.php	/^    public static function checkSessionConcurrency(){$/;"	f
+cipher	core/Encryption.php	/^        $cipher  = mb_substr($iv_cipher, $iv_size, null, '8bit');$/;"	v
+ciphertext	core/Encryption.php	/^        $ciphertext       = $iv . $encrypted_string;$/;"	v
+clean	core/Request.php	/^    public static function post($key, $clean = false)$/;"	v
+compareLength	core/Encryption.php	/^        $compareLength = mb_strlen($compare, '8bit');$/;"	v
+config	core/Config.php	/^    public static $config;$/;"	v
+config_file	core/Config.php	/^	        $config_file = '..\/application\/config\/config.' . Environment::get() . '.php';$/;"	v
+contains	model/UserRoleModel.php	/^ * This class contains everything that is related to up- and downgrading accounts.$/;"	c
+controller	core/Application.php	/^                $this->controller = new ErrorController;$/;"	v
+controller	core/Application.php	/^            $this->controller = new $this->controller_name();$/;"	v
+controller	core/Application.php	/^            $this->controller = new ErrorController;$/;"	v
+controller	core/Application.php	/^    private $controller;$/;"	v
+controller_name	core/Application.php	/^			$this->controller_name = Config::get('DEFAULT_CONTROLLER');$/;"	v
+controller_name	core/Application.php	/^		$this->controller_name = ucwords($this->controller_name) . 'Controller';$/;"	v
+controller_name	core/Application.php	/^            $this->controller_name = isset($url[0]) ? $url[0] : null;$/;"	v
+controller_name	core/Application.php	/^    private $controller_name;$/;"	v
+cookie	core/Request.php	/^    public static function cookie($key)$/;"	f
+cookie_string	model/LoginModel.php	/^        $cookie_string            = $cookie_string_first_part . ':' . $cookie_string_hash;$/;"	v
+cookie_string_first_part	model/LoginModel.php	/^        $cookie_string_first_part = Encryption::encrypt($user_id) . ':' . $random_token_string;$/;"	v
+cookie_string_hash	model/LoginModel.php	/^        $cookie_string_hash       = hash('sha256', $user_id . ':' . $random_token_string);$/;"	v
+count	model/RegistrationModel.php	/^		$count =  $query->rowCount();$/;"	v
+count	model/UserModel.php	/^        $count = $query->rowCount();$/;"	v
+create	controller/NoteController.php	/^    public function create()$/;"	f
+createAvatar	model/AvatarModel.php	/^    public static function createAvatar()$/;"	f
+createControllerAndActionNames	core/Application.php	/^	private function createControllerAndActionNames()$/;"	f
+createNote	model/NoteModel.php	/^    public static function createNote($note_text)$/;"	f
+csrf_token	core/Csrf.php	/^        $csrf_token  = Session::get('csrf_token');$/;"	v
+data	controller/LoginController.php	/^            $data = array('redirect' => Request::get('redirect') ? Request::get('redirect') : NULL);$/;"	v
+data	core/View.php	/^    public function render($filename, $data = null)$/;"	v
+data	core/View.php	/^    public function renderMulti($filenames, $data = null)$/;"	v
+data	core/View.php	/^    public function renderWithoutHeaderAndFooter($filename, $data = null)$/;"	v
+database	core/DatabaseFactory.php	/^			$this->database = new PDO($/;"	v
+database	core/DatabaseFactory.php	/^	private $database;$/;"	v
+database	core/DatabaseFactory.php	/^ * $database = DatabaseFactory::getFactory()->getConnection();$/;"	v
+database	core/Session.php	/^            $database = DatabaseFactory::getFactory()->getConnection();$/;"	v
+database	core/Session.php	/^        $database = DatabaseFactory::getFactory()->getConnection();$/;"	v
+database	model/AdminModel.php	/^		$database = DatabaseFactory::getFactory()->getConnection();$/;"	v
+database	model/AvatarModel.php	/^        $database = DatabaseFactory::getFactory()->getConnection();$/;"	v
+database	model/InstructorModel.php	/^		$database = DatabaseFactory::getFactory()->getConnection();$/;"	v
+database	model/LoginModel.php	/^            $database = DatabaseFactory::getFactory()->getConnection();$/;"	v
+database	model/LoginModel.php	/^        $database = DatabaseFactory::getFactory()->getConnection();$/;"	v
+database	model/NoteModel.php	/^        $database = DatabaseFactory::getFactory()->getConnection();$/;"	v
+database	model/PasswordResetModel.php	/^		$database = DatabaseFactory::getFactory()->getConnection();$/;"	v
+database	model/RegistrationModel.php	/^		$database = DatabaseFactory::getFactory()->getConnection();$/;"	v
+database	model/UserModel.php	/^        $database = DatabaseFactory::getFactory()->getConnection();$/;"	v
+database	model/UserRoleModel.php	/^		$database = DatabaseFactory::getFactory()->getConnection();$/;"	v
+decrypt	core/Encryption.php	/^    public static function decrypt($ciphertext){$/;"	f
+delete	controller/NoteController.php	/^    public function delete($note_id)$/;"	f
+delete	model/AdminModel.php	/^			$delete = 0;$/;"	v
+delete	model/AdminModel.php	/^			$delete = 1;$/;"	v
+delete	model/InstructorModel.php	/^			$delete = 0;$/;"	v
+delete	model/InstructorModel.php	/^			$delete = 1;$/;"	v
+deleteAvatar	model/AvatarModel.php	/^    public static function deleteAvatar($userId)$/;"	f
+deleteAvatarImageFile	model/AvatarModel.php	/^    public static function deleteAvatarImageFile($userId)$/;"	f
+deleteAvatar_action	controller/LoginController.php	/^    public function deleteAvatar_action()$/;"	f
+deleteCookie	model/LoginModel.php	/^    public static function deleteCookie($user_id = null)$/;"	f
+deleteNote	model/NoteModel.php	/^    public static function deleteNote($note_id)$/;"	f
+destroy	core/Session.php	/^    public static function destroy()$/;"	f
+doesEmailAlreadyExist	model/UserModel.php	/^    public static function doesEmailAlreadyExist($user_email)$/;"	f
+doesUsernameAlreadyExist	model/UserModel.php	/^    public static function doesUsernameAlreadyExist($user_name)$/;"	f
+don	core/Encryption.php	/^            throw new Exception("Encryption function don't exists");$/;"	f
+edit	controller/NoteController.php	/^    public function edit($note_id)$/;"	f
+editAvatar	controller/LoginController.php	/^    public function editAvatar()$/;"	f
+editSave	controller/NoteController.php	/^    public function editSave()$/;"	f
+editUserEmail	controller/LoginController.php	/^    public function editUserEmail()$/;"	f
+editUserEmail	model/UserModel.php	/^    public static function editUserEmail($new_user_email)$/;"	f
+editUserEmail_action	controller/LoginController.php	/^    public function editUserEmail_action()$/;"	f
+editUserName	model/UserModel.php	/^    public static function editUserName($new_user_name)$/;"	f
+editUsername	controller/LoginController.php	/^    public function editUsername()$/;"	f
+editUsername_action	controller/LoginController.php	/^    public function editUsername_action()$/;"	f
+encrypt	core/Encryption.php	/^    public static function encrypt($plain){$/;"	f
+encrypted_string	core/Encryption.php	/^        $encrypted_string = openssl_encrypt($plain, self::CIPHER, $key, OPENSSL_RAW_DATA, $iv);$/;"	v
+error	core/Mail.php	/^			$this->error = $mail->ErrorInfo;$/;"	v
+error	core/Mail.php	/^	private $error;$/;"	v
+error404	controller/ErrorController.php	/^    public function error404()$/;"	f
+factory	core/DatabaseFactory.php	/^	private static $factory;$/;"	v
+feedback_negative	view/_templates/feedback.php	/^$feedback_negative = Session::get('feedback_negative');$/;"	v
+feedback_positive	view/_templates/feedback.php	/^$feedback_positive = Session::get('feedback_positive');$/;"	v
+final_width	model/AvatarModel.php	/^    public static function resizeAvatarImage($source_image, $destination, $final_width = 44, $final_height = 44)$/;"	v
+for	config/config.development.php	/^	 * DB_CHARSET The charset, necessary for security reasons. Check Database.php class for more info.$/;"	c
+for	config/config.development.php	/^	 * EMAIL_USED_MAILER: Check Mail class for alternatives$/;"	c
+generateAndShowCaptcha	model/CaptchaModel.php	/^	public static function generateAndShowCaptcha()$/;"	f
+get	core/Config.php	/^    public static function get($key)$/;"	f
+get	core/Environment.php	/^	public static function get()$/;"	f
+get	core/Request.php	/^    public static function get($key)$/;"	f
+get	core/Session.php	/^    public static function get($key)$/;"	f
+get	core/Text.php	/^    public static function get($key)$/;"	f
+getAllNotes	model/NoteModel.php	/^    public static function getAllNotes()$/;"	f
+getConnection	core/DatabaseFactory.php	/^	public function getConnection() {$/;"	f
+getError	core/Mail.php	/^	public function getError()$/;"	f
+getFactory	core/DatabaseFactory.php	/^	public static function getFactory()$/;"	f
+getGravatarLinkByEmail	model/AvatarModel.php	/^    public static function getGravatarLinkByEmail($email)$/;"	f
+getNote	model/NoteModel.php	/^    public static function getNote($note_id)$/;"	f
+getPublicAvatarFilePathOfUser	model/AvatarModel.php	/^    public static function getPublicAvatarFilePathOfUser($user_has_avatar, $user_id)$/;"	f
+getPublicProfileOfUser	model/UserModel.php	/^    public static function getPublicProfileOfUser($user_id)$/;"	f
+getPublicProfilesOfAllUsers	model/UserModel.php	/^    public static function getPublicProfilesOfAllUsers()$/;"	f
+getPublicUserAvatarFilePathByUserId	model/AvatarModel.php	/^    public static function getPublicUserAvatarFilePathByUserId($user_id)$/;"	f
+getUserDataByUserIdAndToken	model/UserModel.php	/^    public static function getUserDataByUserIdAndToken($user_id, $token)$/;"	f
+getUserDataByUserNameOrEmail	model/UserModel.php	/^    public static function getUserDataByUserNameOrEmail($user_name_or_email)$/;"	f
+getUserDataByUsername	model/UserModel.php	/^    public static function getUserDataByUsername($user_name)$/;"	f
+getUserIdByUsername	model/UserModel.php	/^    public static function getUserIdByUsername($user_name)$/;"	f
+handles	model/CaptchaModel.php	/^ * This model class handles all the captcha stuff.$/;"	c
+hashEquals	core/Encryption.php	/^    private static function hashEquals($hmac, $compare){$/;"	f
+hashLength	core/Encryption.php	/^        $hashLength    = mb_strlen($hmac, '8bit');$/;"	v
+height	model/AvatarModel.php	/^        $height = $imageData[1];$/;"	v
+hmac	core/Encryption.php	/^        $hmac 	    = mb_substr($ciphertext, 0, $macSize, '8bit');$/;"	v
+hmac	core/Encryption.php	/^        $hmac = hash_hmac('sha256', $ciphertext, $key);$/;"	v
+home	core/Redirect.php	/^	public static function home()$/;"	f
+horizontalCoordinateOfSource	model/AvatarModel.php	/^            $horizontalCoordinateOfSource = ($width - $height) \/ 2;$/;"	v
+horizontalCoordinateOfSource	model/AvatarModel.php	/^            $horizontalCoordinateOfSource = 0;$/;"	v
+imageData	model/AvatarModel.php	/^        $imageData = getimagesize($source_image);$/;"	v
+image_proportions	model/AvatarModel.php	/^        $image_proportions = getimagesize($_FILES['avatar_file']['tmp_name']);$/;"	v
+incrementFailedLoginCounterOfUser	model/LoginModel.php	/^    public static function incrementFailedLoginCounterOfUser($user_name)$/;"	f
+incrementUserNotFoundCounter	model/LoginModel.php	/^    private static function incrementUserNotFoundCounter()$/;"	f
+index	controller/AdminController.php	/^    public function index()$/;"	f
+index	controller/DashboardController.php	/^    public function index()$/;"	f
+index	controller/IndexController.php	/^    public function index()$/;"	f
+index	controller/InstructorController.php	/^    public function index()$/;"	f
+index	controller/LoginController.php	/^    public function index()$/;"	f
+index	controller/NoteController.php	/^    public function index()$/;"	f
+index	controller/ProfileController.php	/^    public function index()$/;"	f
+init	core/Session.php	/^    public static function init()$/;"	f
+isAvatarFolderWritable	model/AvatarModel.php	/^    public static function isAvatarFolderWritable()$/;"	f
+isConcurrentSessionExists	core/Session.php	/^    public static function isConcurrentSessionExists(){$/;"	f
+isTokenValid	core/Csrf.php	/^    public static function isTokenValid(){$/;"	f
+isUserLoggedIn	model/LoginModel.php	/^    public static function isUserLoggedIn()$/;"	f
+iv	core/Encryption.php	/^        $iv      = mb_substr($iv_cipher, 0, $iv_size, '8bit');$/;"	v
+iv	core/Encryption.php	/^        $iv      = openssl_random_pseudo_bytes($iv_size);$/;"	v
+iv_cipher	core/Encryption.php	/^        $iv_cipher  = mb_substr($ciphertext, $macSize, null, '8bit');$/;"	v
+iv_size	core/Encryption.php	/^        $iv_size = openssl_cipher_iv_length(self::CIPHER);$/;"	v
+key	core/Encryption.php	/^        $key = mb_substr(hash(self::HASH_FUNCTION, Config::get('ENCRYPTION_KEY') . Config::get('HMAC_SALT')), 0, 32, '8bit');$/;"	v
+key	core/View.php	/^            foreach ($data as $key => $value) {$/;"	v
+key	view/note/index.php	/^                    <?php foreach($this->notes as $key => $value) { ?>$/;"	v
+login	controller/LoginController.php	/^    public function login()$/;"	f
+login	model/LoginModel.php	/^    public static function login($user_name, $user_password, $set_remember_me_cookie = null)$/;"	f
+loginWithCookie	controller/LoginController.php	/^    public function loginWithCookie()$/;"	f
+loginWithCookie	model/LoginModel.php	/^    public static function loginWithCookie($cookie)$/;"	f
+login_successful	controller/LoginController.php	/^         $login_successful = LoginModel::loginWithCookie(Request::cookie('remember_me'));$/;"	v
+login_successful	controller/LoginController.php	/^        $login_successful = LoginModel::login($/;"	v
+logout	controller/LoginController.php	/^    public function logout()$/;"	f
+logout	model/LoginModel.php	/^    public static function logout()$/;"	f
+macSize	core/Encryption.php	/^        $macSize    = 64;$/;"	v
+mail	core/Mail.php	/^		$mail = new PHPMailer;$/;"	v
+mail	model/PasswordResetModel.php	/^		$mail = new Mail;$/;"	v
+mail	model/RegistrationModel.php	/^		$mail = new Mail;$/;"	v
+mail_sent	model/PasswordResetModel.php	/^		$mail_sent = $mail->sendMail($user_email, Config::get('EMAIL_PASSWORD_RESET_FROM_EMAIL'), $/;"	v
+mail_sent	model/PasswordResetModel.php	/^		$mail_sent = self::sendPasswordResetMail($result->user_name, $user_password_reset_hash, $result->user_email);$/;"	v
+mail_sent	model/RegistrationModel.php	/^		$mail_sent = $mail->sendMail($user_email, Config::get('EMAIL_VERIFICATION_FROM_EMAIL'),$/;"	v
+makeToken	core/Csrf.php	/^    public static function makeToken() {$/;"	f
+max_time	core/Csrf.php	/^        $max_time    = 60 * 60 * 24; \/\/ token is valid for 1 day$/;"	v
+mimeType	model/AvatarModel.php	/^        $mimeType = $imageData['mime'];$/;"	v
+myImage	model/AvatarModel.php	/^            case 'image\/gif': $myImage = imagecreatefromgif($source_image); break;$/;"	v
+myImage	model/AvatarModel.php	/^            case 'image\/jpeg': $myImage = imagecreatefromjpeg($source_image); break;$/;"	v
+myImage	model/AvatarModel.php	/^            case 'image\/png': $myImage = imagecreatefrompng($source_image); break;$/;"	v
+myVariable	core/Filter.php	/^     * WRONG: $myVariable = Filter::XSSFilter($myVariable);$/;"	v
+navigation_action	core/View.php	/^        $navigation_action = $split_filename[1];$/;"	v
+navigation_controller	core/View.php	/^        $navigation_controller = $split_filename[0];$/;"	v
+new_user_email	model/UserModel.php	/^        $new_user_email = substr(strip_tags($new_user_email), 0, 254);$/;"	v
+new_user_name	model/UserModel.php	/^        $new_user_name = substr(strip_tags($new_user_name), 0, 64);$/;"	v
+options	core/DatabaseFactory.php	/^			$options = array(PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING);$/;"	v
+originalHmac	core/Encryption.php	/^        $originalHmac = hash_hmac('sha256', $iv_cipher, $key);$/;"	v
+parameters	core/Application.php	/^            $this->parameters = array_values($url);$/;"	v
+parameters	core/Application.php	/^    private $parameters = array();$/;"	v
+post	core/Request.php	/^    public static function post($key, $clean = false)$/;"	f
+postCheckbox	core/Request.php	/^    public static function postCheckbox($key)$/;"	f
+query	core/Session.php	/^            $query = $database->prepare($sql);$/;"	v
+query	core/Session.php	/^        $query = $database->prepare($sql);$/;"	v
+query	model/AdminModel.php	/^		$query = $database->prepare("UPDATE users SET user_suspension_timestamp = :user_suspension_timestamp, user_deleted = :user_deleted  WHERE user_id = :user_id LIMIT 1");$/;"	v
+query	model/AvatarModel.php	/^        $query = $database->prepare("SELECT user_has_avatar FROM users WHERE user_id = :user_id LIMIT 1");$/;"	v
+query	model/AvatarModel.php	/^        $query = $database->prepare("UPDATE users SET user_has_avatar = TRUE WHERE user_id = :user_id LIMIT 1");$/;"	v
+query	model/InstructorModel.php	/^		$query = $database->prepare("UPDATE users SET user_suspension_timestamp = :user_suspension_timestamp, user_deleted = :user_deleted  WHERE user_id = :user_id LIMIT 1");$/;"	v
+query	model/NoteModel.php	/^        $query = $database->prepare($sql);$/;"	v
+query	model/PasswordResetModel.php	/^		$query = $database->prepare($sql);$/;"	v
+query	model/RegistrationModel.php	/^		$query = $database->prepare("DELETE FROM users WHERE user_id = :user_id");$/;"	v
+query	model/RegistrationModel.php	/^		$query = $database->prepare($sql);$/;"	v
+query	model/UserModel.php	/^        $query = $database->prepare("SELECT user_id FROM users WHERE user_email = :user_email LIMIT 1");$/;"	v
+query	model/UserModel.php	/^        $query = $database->prepare("SELECT user_id FROM users WHERE user_name = :user_name LIMIT 1");$/;"	v
+query	model/UserModel.php	/^        $query = $database->prepare("SELECT user_id, user_name, user_email FROM users$/;"	v
+query	model/UserModel.php	/^        $query = $database->prepare("SELECT user_id, user_name, user_email, user_password_hash, user_active,$/;"	v
+query	model/UserModel.php	/^        $query = $database->prepare("UPDATE users SET user_email = :user_email WHERE user_id = :user_id LIMIT 1");$/;"	v
+query	model/UserModel.php	/^        $query = $database->prepare("UPDATE users SET user_name = :user_name WHERE user_id = :user_id LIMIT 1");$/;"	v
+query	model/UserModel.php	/^        $query = $database->prepare($sql);$/;"	v
+query	model/UserRoleModel.php	/^		$query = $database->prepare("UPDATE users SET user_account_type = :new_type WHERE user_id = :user_id LIMIT 1");$/;"	v
+random_token_string	model/LoginModel.php	/^        $random_token_string = hash('sha256', mt_rand());$/;"	v
+register	controller/LoginController.php	/^    public function register()$/;"	f
+registerNewUser	model/RegistrationModel.php	/^	public static function registerNewUser()$/;"	f
+register_action	controller/LoginController.php	/^    public function register_action()$/;"	f
+registrationInputValidation	model/RegistrationModel.php	/^	public static function registrationInputValidation($captcha, $user_name, $user_password_new, $user_password_repeat, $user_email)$/;"	f
+registration_successful	controller/LoginController.php	/^        $registration_successful = RegistrationModel::registerNewUser();$/;"	v
+render	core/View.php	/^    public function render($filename, $data = null)$/;"	f
+renderFeedbackMessages	core/View.php	/^    public function renderFeedbackMessages()$/;"	f
+renderJSON	core/View.php	/^    public function renderJSON($data)$/;"	f
+renderMulti	core/View.php	/^    public function renderMulti($filenames, $data = null)$/;"	f
+renderWithoutHeaderAndFooter	core/View.php	/^    public function renderWithoutHeaderAndFooter($filename, $data = null)$/;"	f
+requestPasswordReset	controller/LoginController.php	/^    public function requestPasswordReset()$/;"	f
+requestPasswordReset	model/PasswordResetModel.php	/^	public static function requestPasswordReset($user_name_or_email)$/;"	f
+requestPasswordReset_action	controller/LoginController.php	/^    public function requestPasswordReset_action()$/;"	f
+resetFailedLoginCounterOfUser	model/LoginModel.php	/^    public static function resetFailedLoginCounterOfUser($user_name)$/;"	f
+resetUserNotFoundCounter	model/LoginModel.php	/^    private static function resetUserNotFoundCounter()$/;"	f
+resizeAvatarImage	model/AvatarModel.php	/^    public static function resizeAvatarImage($source_image, $destination, $final_width = 44, $final_height = 44)$/;"	f
+result	controller/LoginController.php	/^        $result = PasswordResetModel::changePassword($/;"	v
+result	core/Encryption.php	/^        $result = 0;$/;"	v
+result	core/Encryption.php	/^        return $result === 0;$/;"	v
+result	core/Session.php	/^            $result = $query->fetch();$/;"	v
+result	model/LoginModel.php	/^		$result = UserModel::getUserDataByUsername($user_name);$/;"	v
+result	model/LoginModel.php	/^	    $result = self::validateAndGetUser($user_name, $user_password);$/;"	v
+result	model/LoginModel.php	/^        $result = UserModel::getUserDataByUserIdAndToken($user_id, $token);$/;"	v
+result	model/PasswordResetModel.php	/^		$result = UserModel::getUserDataByUserNameOrEmail($user_name_or_email);$/;"	v
+result_user_row	model/PasswordResetModel.php	/^		$result_user_row = $query->fetch();$/;"	v
+return	model/RegistrationModel.php	/^			$return = false;$/;"	v
+return	model/RegistrationModel.php	/^            $return = false;$/;"	v
+return	model/RegistrationModel.php	/^        $return = true;$/;"	v
+rollbackRegistrationByUserId	model/RegistrationModel.php	/^	public static function rollbackRegistrationByUserId($user_id)$/;"	f
+saveChangedPassword	model/PasswordResetModel.php	/^	public static function saveChangedPassword($user_name, $user_password_hash)$/;"	f
+saveNewEmailAddress	model/UserModel.php	/^    public static function saveNewEmailAddress($user_id, $new_user_email)$/;"	f
+saveNewUserName	model/UserModel.php	/^    public static function saveNewUserName($user_id, $new_user_name)$/;"	f
+saveNewUserPassword	model/PasswordResetModel.php	/^	public static function saveNewUserPassword($user_name, $user_password_hash, $user_password_reset_hash)$/;"	f
+saveRoleToDatabase	model/UserRoleModel.php	/^	public static function saveRoleToDatabase($type)$/;"	f
+saveTimestampOfLoginOfUser	model/LoginModel.php	/^    public static function saveTimestampOfLoginOfUser($user_name)$/;"	f
+sendMail	core/Mail.php	/^	public function sendMail($user_email, $from_email, $from_name, $subject, $body)$/;"	f
+sendMailWithNativeMailFunction	core/Mail.php	/^	public function sendMailWithNativeMailFunction()$/;"	f
+sendMailWithPHPMailer	core/Mail.php	/^	public function sendMailWithPHPMailer($user_email, $from_email, $from_name, $subject, $body)$/;"	f
+sendMailWithSwiftMailer	core/Mail.php	/^	public function sendMailWithSwiftMailer()$/;"	f
+sendPasswordResetMail	model/PasswordResetModel.php	/^	public static function sendPasswordResetMail($user_name, $user_password_reset_hash, $user_email)$/;"	f
+sendVerificationEmail	model/RegistrationModel.php	/^	public static function sendVerificationEmail($user_id, $user_email, $user_activation_hash)$/;"	f
+sessionId	core/Session.php	/^    public static function updateSessionId($userId, $sessionId = null){$/;"	v
+session_id	core/Session.php	/^        $session_id = session_id();$/;"	v
+set	core/Session.php	/^    public static function set($key, $value)$/;"	f
+setAccountSuspensionAndDeletionStatus	model/AdminModel.php	/^	public static function setAccountSuspensionAndDeletionStatus($suspensionInDays, $softDelete, $userId)$/;"	f
+setAccountSuspensionAndDeletionStatus	model/InstructorModel.php	/^	public static function setAccountSuspensionAndDeletionStatus($suspensionInDays, $softDelete, $userId)$/;"	f
+setNewPassword	controller/LoginController.php	/^    public function setNewPassword()$/;"	f
+setNewPassword	model/PasswordResetModel.php	/^	public static function setNewPassword($user_name, $user_password_reset_hash, $user_password_new, $user_password_repeat)$/;"	f
+setPasswordResetDatabaseToken	model/PasswordResetModel.php	/^	public static function setPasswordResetDatabaseToken($user_name, $user_password_reset_hash, $temporary_timestamp)$/;"	f
+setRememberMeInDatabaseAndCookie	model/LoginModel.php	/^    public static function setRememberMeInDatabaseAndCookie($user_id)$/;"	f
+setSuccessfulLoginIntoSession	model/LoginModel.php	/^    public static function setSuccessfulLoginIntoSession($user_id, $user_name, $user_email, $user_account_type)$/;"	f
+set_remember_me_cookie	model/LoginModel.php	/^    public static function login($user_name, $user_password, $set_remember_me_cookie = null)$/;"	v
+showCaptcha	controller/LoginController.php	/^    public function showCaptcha()$/;"	f
+showProfile	controller/LoginController.php	/^    public function showProfile()$/;"	f
+showProfile	controller/ProfileController.php	/^    public function showProfile($user_id)$/;"	f
+smallestSide	model/AvatarModel.php	/^            $smallestSide = $height;$/;"	v
+smallestSide	model/AvatarModel.php	/^            $smallestSide = $width;$/;"	v
+splitUrl	core/Application.php	/^    private function splitUrl()$/;"	f
+split_filename	core/View.php	/^        $split_filename = explode("\/", $filename);$/;"	v
+split_filename	core/View.php	/^        $split_filename = explode("\/", $navigation_controller_and_action);$/;"	v
+sql	core/Session.php	/^            $sql = "SELECT session_id FROM users WHERE user_id = :user_id LIMIT 1";$/;"	v
+sql	core/Session.php	/^        $sql = "UPDATE users SET session_id = :session_id WHERE user_id = :user_id";$/;"	v
+sql	model/LoginModel.php	/^            $sql = "UPDATE users SET user_remember_me_token = :user_remember_me_token WHERE user_id = :user_id LIMIT 1";$/;"	v
+sql	model/LoginModel.php	/^        $sql = "UPDATE users SET user_last_login_timestamp = :user_last_login_timestamp$/;"	v
+sql	model/LoginModel.php	/^        $sql = "UPDATE users SET user_remember_me_token = :user_remember_me_token WHERE user_id = :user_id LIMIT 1";$/;"	v
+sql	model/LoginModel.php	/^        $sql = "UPDATE users$/;"	v
+sql	model/NoteModel.php	/^        $sql = "DELETE FROM notes WHERE note_id = :note_id AND user_id = :user_id LIMIT 1";$/;"	v
+sql	model/NoteModel.php	/^        $sql = "INSERT INTO notes (note_text, user_id) VALUES (:note_text, :user_id)";$/;"	v
+sql	model/NoteModel.php	/^        $sql = "SELECT user_id, note_id, note_text FROM notes WHERE user_id = :user_id AND note_id = :note_id LIMIT 1";$/;"	v
+sql	model/NoteModel.php	/^        $sql = "SELECT user_id, note_id, note_text FROM notes WHERE user_id = :user_id";$/;"	v
+sql	model/NoteModel.php	/^        $sql = "UPDATE notes SET note_text = :note_text WHERE note_id = :note_id AND user_id = :user_id LIMIT 1";$/;"	v
+sql	model/PasswordResetModel.php	/^		$sql = "SELECT user_id, user_password_reset_timestamp$/;"	v
+sql	model/PasswordResetModel.php	/^		$sql = "SELECT user_password_hash, user_failed_logins FROM users WHERE user_name = :user_name LIMIT 1;";$/;"	v
+sql	model/PasswordResetModel.php	/^		$sql = "UPDATE users SET user_password_hash = :user_password_hash$/;"	v
+sql	model/PasswordResetModel.php	/^		$sql = "UPDATE users SET user_password_hash = :user_password_hash, user_password_reset_hash = NULL,$/;"	v
+sql	model/PasswordResetModel.php	/^		$sql = "UPDATE users$/;"	v
+sql	model/RegistrationModel.php	/^		$sql = "INSERT INTO users (user_name, user_password_hash, user_email, user_creation_timestamp, user_activation_hash, user_provider_type)$/;"	v
+sql	model/RegistrationModel.php	/^		$sql = "UPDATE users SET user_active = 1, user_activation_hash = NULL$/;"	v
+sql	model/UserModel.php	/^        $sql = "SELECT user_id FROM users WHERE user_name = :user_name AND user_provider_type = :provider_type LIMIT 1";$/;"	v
+sql	model/UserModel.php	/^        $sql = "SELECT user_id, user_name, user_email, user_active, user_has_avatar, user_deleted FROM users";$/;"	v
+sql	model/UserModel.php	/^        $sql = "SELECT user_id, user_name, user_email, user_active, user_has_avatar, user_deleted$/;"	v
+sql	model/UserModel.php	/^        $sql = "SELECT user_id, user_name, user_email, user_password_hash, user_active,user_deleted, user_suspension_timestamp, user_account_type,$/;"	v
+status_of_action	model/UserModel.php	/^        $status_of_action = self::saveNewUserName(Session::get('user_id'), $new_user_name);$/;"	v
+sth	model/AvatarModel.php	/^        $sth = $database->prepare("UPDATE users SET user_has_avatar = 0 WHERE user_id = :user_id LIMIT 1");$/;"	v
+sth	model/LoginModel.php	/^            $sth = $database->prepare($sql);$/;"	v
+sth	model/LoginModel.php	/^        $sth = $database->prepare($sql);$/;"	v
+stored_time	core/Csrf.php	/^        $stored_time = Session::get('csrf_token_time');$/;"	v
+suspensionTime	model/AdminModel.php	/^			$suspensionTime = null;$/;"	v
+suspensionTime	model/AdminModel.php	/^			$suspensionTime = time() + ($suspensionInDays * 60 * 60 * 24);$/;"	v
+suspensionTime	model/InstructorModel.php	/^			$suspensionTime = null;$/;"	v
+suspensionTime	model/InstructorModel.php	/^			$suspensionTime = time() + ($suspensionInDays * 60 * 60 * 24);$/;"	v
+suspensionTimer	model/LoginModel.php	/^            $suspensionTimer = Text::get('FEEDBACK_ACCOUNT_SUSPENDED') . round(abs($result->user_suspension_timestamp - time())\/60\/60, 2) . " hours left";$/;"	v
+target_file_path	model/AvatarModel.php	/^            $target_file_path = Config::get('PATH_AVATARS') . Session::get('user_id');$/;"	v
+temporary_timestamp	model/PasswordResetModel.php	/^		$temporary_timestamp = time();$/;"	v
+texts	core/Text.php	/^    private static $texts;$/;"	v
+thumb	model/AvatarModel.php	/^        $thumb = imagecreatetruecolor($final_width, $final_height);$/;"	v
+timestamp_one_hour_ago	model/PasswordResetModel.php	/^		$timestamp_one_hour_ago = time() - 3600;$/;"	v
+to	core/Redirect.php	/^	public static function to($path)$/;"	f
+token	core/Csrf.php	/^        $token = Request::post('csrf_token');$/;"	v
+token	core/Csrf.php	/^        return $token === Session::get('csrf_token') && !empty($token);$/;"	v
+token_set	model/PasswordResetModel.php	/^		$token_set = self::setPasswordResetDatabaseToken($result->user_name, $user_password_reset_hash, $temporary_timestamp);$/;"	v
+updateNote	model/NoteModel.php	/^    public static function updateNote($note_id, $note_text)$/;"	f
+updateSessionId	core/Session.php	/^    public static function updateSessionId($userId, $sessionId = null){$/;"	f
+uploadAvatar_action	controller/LoginController.php	/^    public function uploadAvatar_action()$/;"	f
+url	core/Application.php	/^            $url = explode('\/', $url);$/;"	v
+url	core/Application.php	/^            $url = filter_var($url, FILTER_SANITIZE_URL);$/;"	v
+url	core/Application.php	/^            $url = trim(Request::get('url'), '\/');$/;"	v
+user	model/PasswordResetModel.php	/^		$user = $query->fetch();$/;"	v
+user	model/UserModel.php	/^        $user = $query->fetch();$/;"	v
+userId	core/Session.php	/^        $userId     = Session::get('user_id');$/;"	v
+userIsLoggedIn	core/Session.php	/^    public static function userIsLoggedIn()$/;"	f
+userSessionId	core/Session.php	/^            $userSessionId = !empty($result)? $result->session_id: null;$/;"	v
+user_activation_hash	model/RegistrationModel.php	/^		$user_activation_hash = sha1(uniqid(mt_rand(), true));$/;"	v
+user_email	model/RegistrationModel.php	/^		$user_email = strip_tags(Request::post('user_email'));$/;"	v
+user_id	model/LoginModel.php	/^        $user_id = Encryption::decrypt($user_id);$/;"	v
+user_id	model/LoginModel.php	/^        $user_id = Session::get('user_id');$/;"	v
+user_id	model/RegistrationModel.php	/^		$user_id = UserModel::getUserIdByUsername($user_name);$/;"	v
+user_name	model/RegistrationModel.php	/^		$user_name = strip_tags(Request::post('user_name'));$/;"	v
+user_password_hash	model/PasswordResetModel.php	/^		$user_password_hash = password_hash($user_password_new, PASSWORD_DEFAULT);$/;"	v
+user_password_hash	model/PasswordResetModel.php	/^            $user_password_hash = $user->user_password_hash;$/;"	v
+user_password_hash	model/RegistrationModel.php	/^		$user_password_hash = password_hash($user_password_new, PASSWORD_DEFAULT);$/;"	v
+user_password_new	model/RegistrationModel.php	/^		$user_password_new = Request::post('user_password_new');$/;"	v
+user_password_repeat	model/RegistrationModel.php	/^		$user_password_repeat = Request::post('user_password_repeat');$/;"	v
+user_password_reset_hash	model/PasswordResetModel.php	/^		$user_password_reset_hash = sha1(uniqid(mt_rand(), true));$/;"	v
+validateAndGetUser	model/LoginModel.php	/^	private static function validateAndGetUser($user_name, $user_password)$/;"	f
+validateImageFile	model/AvatarModel.php	/^    public static function validateImageFile()$/;"	f
+validatePasswordChange	model/PasswordResetModel.php	/^	public static function validatePasswordChange($user_name, $user_password_current, $user_password_new, $user_password_repeat)$/;"	f
+validateResetPassword	model/PasswordResetModel.php	/^	public static function validateResetPassword($user_name, $user_password_reset_hash, $user_password_new, $user_password_repeat)$/;"	f
+validateUserEmail	model/RegistrationModel.php	/^    public static function validateUserEmail($user_email)$/;"	f
+validateUserName	model/RegistrationModel.php	/^    public static function validateUserName($user_name)$/;"	f
+validateUserPassword	model/RegistrationModel.php	/^    public static function validateUserPassword($user_password_new, $user_password_repeat)$/;"	f
+validation_result	model/RegistrationModel.php	/^		$validation_result = self::registrationInputValidation(Request::post('captcha'), $user_name, $user_password_new, $user_password_repeat, $user_email);$/;"	v
+value	core/Filter.php	/^            $value = htmlspecialchars($value, ENT_QUOTES, 'UTF-8');$/;"	v
+verify	controller/LoginController.php	/^    public function verify($user_id, $user_activation_verification_code)$/;"	f
+verifyNewUser	model/RegistrationModel.php	/^	public static function verifyNewUser($user_id, $user_activation_verification_code)$/;"	f
+verifyPasswordReset	controller/LoginController.php	/^    public function verifyPasswordReset($user_name, $verification_code)$/;"	f
+verifyPasswordReset	model/PasswordResetModel.php	/^	public static function verifyPasswordReset($user_name, $verification_code)$/;"	f
+verticalCoordinateOfSource	model/AvatarModel.php	/^            $verticalCoordinateOfSource = ($height - $width) \/ 2;$/;"	v
+verticalCoordinateOfSource	model/AvatarModel.php	/^            $verticalCoordinateOfSource = 0;$/;"	v
+wasSendingSuccessful	core/Mail.php	/^		$wasSendingSuccessful = $mail->Send();$/;"	v
+width	model/AvatarModel.php	/^        $width = $imageData[0];$/;"	v
+writeAvatarToDatabase	model/AvatarModel.php	/^    public static function writeAvatarToDatabase($user_id)$/;"	f
+writeNewUserToDatabase	model/RegistrationModel.php	/^	public static function writeNewUserToDatabase($user_name, $user_password_hash, $user_email, $user_creation_timestamp, $user_activation_hash)$/;"	f
