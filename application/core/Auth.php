@@ -66,7 +66,19 @@ class Auth
     	// Initialize the session (if not initialized yet)
 	Session::init();
 
-	if (!Session::userIsLoggedIn() || Session::get("user_account_type") != 2) {
+	if (!Session::userIsLoggedIn() || Session::get("user_account_type") >= 6) { // Changed to >= to enable access to student features.
+	    Session::destroy();
+            header('location: ' . Config::get('URL') . 'login'); 
+	    exit();
+	}
+    }
+
+    public static function checkStudentAuthentication() // TODO: Should check concurrency for all these functions
+    {
+    	// Initialize the session (if not initialized yet)
+	Session::init();
+
+	if (!Session::userIsLoggedIn() || Session::get("user_account_type") >= 5) { // Changed to >= to enable access to student features.
 	    Session::destroy();
             header('location: ' . Config::get('URL') . 'login'); 
 	    exit();

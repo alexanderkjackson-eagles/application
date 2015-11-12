@@ -16,9 +16,11 @@
 	<?php 
 		if(isset($_GET['page'])){
 			$var = $_GET['page'];
-			include '/var/www/html/our-html/Instructor Forms/' . $var;
-			if ($var == 'studentData.html')
+			if ($var == 'students.html')
 				include '/var/www/html/application/view/instructor/student_list.php';
+			
+			else
+				include '/var/www/html/our-html/Instructor Forms/' . $var;
 		}
 		else
 			include '/var/www/html/our-html/Instructor Forms/instructor.html';
