@@ -15,6 +15,19 @@ class UserModel
      *
      * @return array The profiles of all users
      */
+
+    public static function getClassID(){
+    // Returns the class ID of current user.
+    	$userId = Session::get('user_id');
+        $database = DatabaseFactory::getFactory()->getConnection();
+
+        $sql = "SELECT class_id FROM users where user_id = :user_id";
+        $query = $database->prepare($sql);
+        $query->execute(array(':user_id' => $userId));
+
+	return $query->fetch()->class_id;
+    }
+
     public static function getPublicProfilesOfAllUsers()
     {
         $database = DatabaseFactory::getFactory()->getConnection();
@@ -42,6 +55,32 @@ class UserModel
         }
 
         return $all_users_profiles;
+    }
+
+    public static function getPublicProfilesOfAllStudents()
+    {
+    	// Fetch class session
+	$class_id = self::getClassID();
+    	$database = DatabaseFactory::getFactory()->getConnection();
+
+	$sql = "SELECT user_id, user_name, user_email, user_active, user_has_avatar, user_deleted FROM users WHERE class_id = :class_id";
+        $query = $database->prepare($sql);
+        $query->execute(array(':class_id' => $class_id));
+
+	$all_student_profiles = array();
+
+	foreach ($query->fetchAll() as $user) {
+		array_walk_recursive($user, 'Filter::XSSFilter');
+	    $all_student_profiles[$user->user_id] = new stdClass();
+            $all_student_profiles[$user->user_id]->user_id = $user->user_id;
+            $all_student_profiles[$user->user_id]->user_name = $user->user_name;
+            $all_student_profiles[$user->user_id]->user_email = $user->user_email;
+            $all_student_profiles[$user->user_id]->user_active = $user->user_active;
+            $all_student_profiles[$user->user_id]->user_deleted = $user->user_deleted;
+            $all_student_profiles[$user->user_id]->user_avatar_link = (Config::get('USE_GRAVATAR') ? AvatarModel::getGravatarLinkByEmail($user->user_email) : AvatarModel::getPublicAvatarFilePathOfUser($user->user_has_avatar, $user->user_id));
+        }
+
+        return $all_student_profiles;;
     }
 
     /**

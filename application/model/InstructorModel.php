@@ -3,7 +3,7 @@
 /**
  * Handles all data manipulation of the Instructor part
  */
-class AdminModel
+class InstructorModel
 {
 	public static function setAccountSuspensionAndDeletionStatus($suspensionInDays, $softDelete, $userId)
 	{

@@ -77,11 +77,18 @@
                 </li>
             <?php endif; ?>
 	    
-	    <?php if (Session::get("user_account_type") == 2) : ?>
+	    <?php if (Session::get("user_account_type") == 6) : ?>
 	    	<li <?php if (View::checkForActiveController($filename, "instructor")) {
 			echo ' class="active" ';
 		} ?> >
 			<a href="<?php echo Config::get('URL'); ?>instructor/">instructors</a>
+		</li>
+	    <?php endif; ?>
+	    <?php if (Session::get("user_account_type") == 5) : ?>
+	    	<li <?php if (View::checkForActiveController($filename, "student")) {
+			echo ' class="active" ';
+		} ?> >
+			<a href="<?php echo Config::get('URL'); ?>student/">students</a>
 		</li>
 	    <?php endif; ?>
         <?php endif; ?>
