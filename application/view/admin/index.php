@@ -11,14 +11,10 @@
         <div>
             This controller/action/view checks for an update and automatically installs it if found. Additionally, it provides the basic admin page to demonstrate use cases for administrators (researchers).
         </div>
-<<<<<<< HEAD
 	-->
 	<!-- <?php AdminController::checkUpdate() ?> -->
-=======
 	<a href="<?php echo Config::get('URL'); ?>index/index">Index</a>
 	<div class="box">
-	<?php AdminController::checkUpdate() ?>
->>>>>>> 2e53a9fe77baef5c877deed850527a0e566551fa
 	<?php 
 		if(isset($_GET['page'])){ // If ?page= exists
 			$var = $_GET['page'];
