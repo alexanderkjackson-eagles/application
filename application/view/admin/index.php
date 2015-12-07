@@ -7,7 +7,6 @@
         <?php $this->renderFeedbackMessages(); ?>
 
         <h3>What happens here ?</h3>
-	ELECTRIC BOOGALOO
         <div>
             This controller/action/view checks for an update and automatically installs it if found. Additionally, it provides the basic admin page to demonstrate use cases for administrators (researchers).
         </div>
