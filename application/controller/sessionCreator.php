@@ -29,16 +29,6 @@ class AdminController extends Controller
     	$this->View->render('admin/sessionCreator');
     }
 
-    public function sessionEditor()
-    {
-    	$this->View->render('admin/sessionEditor');
-    }
-
-    public function aggregateData()
-    {
-    	$this->View->render('admin/aggregateData');
-    }
-
 	public function actionAccountSettings()
 	{
 		AdminModel::setAccountSuspensionAndDeletionStatus(

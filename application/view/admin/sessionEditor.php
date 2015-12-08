@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC>
+
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+</style>
+
+<script type="text/javascript">
+
+function popup(){
+  cuteLittleWindow = window.open("?page=sessionCreator.html", "littleWindow", "location=no,width=440,height=380"); 
+}
+
+function popup2(){
+	uglyLittleWindow = window.open("?page=../SharedForms/questionAnswers.html", "littleWindow", "location=no, width=480, height=400");
+}
+
+function popup3(){
+	fuglyLittleWindow = window.open("?page=../SharedForms/questionAnswers.html", "littleWindow", "location=no, width=480, height=400");
+}
+
+</script>
+
+</head>
+<title>Session Editor</title>
+<body>
+<h1>Session Viewer:</h1>
+
+
+<body>
+
+<a href="javascript:popup()">Create a new session.</a>
+
+<h2>Sessions In Progress:</h2>
+<p>
+<h3>Session 2:</h3>
+<a href="javascript:popup()">Edit this session.</a>
+<a href="?page=../Instructor Forms/studentData.html">View individual data from this session.</a>
+</p> 
+
+<!-- <p>
+<table style="width:50%">
+  <tr>
+    <th>Instructor:</th>
+  </tr>
+  <tr>
+    <td>Dr. No</td>
+  </tr>
+</table>
+</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Students</th>
+  </tr>
+  <tr>
+    <td>Dr. No</td>
+  </tr>
+</table> -->
+
+<table style="width:25%">
+  <tr>
+    <th>Instructor:</th>
+  </tr>
+  <tr>
+    <td><a href="javascript:popup2()">Dr. No</a></td>
+  </tr>
+  <tr>
+  	<td><b>Student Names:</b></td> 	
+  </tr>
+  <tr>
+  <td><ul>
+  <li><a href="javascript:popup2()">Timothy Buckner</a>
+  <li><a href="javascript:popup2()">John Smith</a>
+  <li><a href="javascript:popup2()">Jane Doe</a>
+  <li><a href="javascript:popup2()">Sonya Taylor</a>
+  </ul></td>
+  </tr>
+  
+</table>
+
+<h2>Previous Sessions:</h2>
+
+<h3> Session 1 </h2>
+<table style="width:25%">
+  <tr>
+    <th>Instructor:</th>
+  </tr>
+  <tr>
+    <td><a href="javascript:popup2()">Dr. Smitty</a></td>
+  </tr>
+  <tr>
+  	<td><b>Student Names:</b></td> 	
+  </tr>
+  <tr>
+  <td><ul>
+  <li><a href="javascript:popup2()">Peter Griffin</a>
+  <li><a href="javascript:popup2()">Mike Pickitch</a>
+  <li><a href="javascript:popup2()">John Clark</a>
+  <li><a href="javascript:popup2()">Megan Zenith</a>
+  </ul></td>
+  </tr>
+  
+</table>
+
+<!-- <p>
+<table style="width:100%">
+  <tr>
+    <th>Instructor:</th>
+    <th colspan="1">View Instructor Data:</th>
+    <th colspan="3">Number of Students:</th>
+  </tr>
+  <tr>
+    <td>Dr. Julius No</td>
+    <td>Work</td>
+    <td>2</td>
+  </tr>
+  <tr>
+  	<th><b>Students:</b>
+  </tr>
+  <tr>
+  	<td><a href="javascript:popup2()">Leroy Jenkins</a></td>
+  	<td><a href="javascript:popup3()">Terry Smith</a></td>
+  	<td><a href="javascript:popup2()">Longinus Silver</a></td>
+  	<td>
+  </tr>
+</table>
+</p> -->
+
+<!-- <p>
+<table style="width:100%">
+  <tr>
+    <th>Students:</th>
+    <th colspan="1">View Student Data:</th>
+    <th colspan="1">Exercises Completed:</th>
+  </tr>
+  <tr>
+    <td>Julius Caesar</td>
+    <td>View</td>
+    <td>39</td>
+  </tr>
+</table>
+</p>
+ -->
+
+<!-- <h2>Previous Research Sessions:</h2>
+ <div>
+<h3>Session 1:</h3>
+<table style="width:100%">
+  <tr>
+    <th>Paragraphs:</th>
+    <th colspan="1">Tag Selected:</th>
+    <th colspan="1">Percentage:</th>
+  </tr>
+  <tr>
+    <td>1-4</td>
+    <td>Love:</td>
+    <td>97%</td>
+  </tr>
+</table>
+</div> -->
+
+<!--
+<p>
+<table style="width:100%">
+  <tr>
+    <th>Instructor:</th>
+    <th colspan="1">View Instructor Data:</th>
+    <th colspan="3">Number of Students:</th>
+  </tr>
+  <tr>
+    <td>Dr. Robert Stark</td>
+    <td>Work</td>
+    <td>2</td>
+ </tr>
+ 
+  <tr>
+  	<td>Students:</td>
+  	<td>sometext</td>
+  	<td>someText</td>
+  </tr>
+  <tr>
+  	<td><a href="javascript:popup2()">John Smith</a></td>
+  	<td><a href="javascript:popup3()">Jane Doe</a></td>
+  	<td><a href="javascript:popup2()">Terry Goodington</a></td>
+  	<td>
+  </tr> 
+
+
+</table>
+</p>
+-->
+
+</body>
+</html>
