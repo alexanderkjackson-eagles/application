@@ -2,6 +2,18 @@
 
     <!-- echo out the system feedback (error and success messages) -->
     <?php $this->renderFeedbackMessages(); ?>
+    <div class="box">
+    <h1>Welcome to the biological turk!</h1>
+    <p>This is a project intended to collect large amounts of human-generated data which specifies the subject or context of an excerpt of text. This data will be compared to the output of a computer program in order to improve its results. The end goal is to categorize text very efficiently and effectively, much like Google does with images.</p>
+    <h2>If you just happened upon this site:</h2>
+    <p>Feel free to contribute by registering a user account using the form below. Once you have created one, you will be able to immediately begin contributing data.</p>
+    <h2>If you are part of a class:</h2>
+    <p>Register an account below and navigate to STUDENTS (the upper-right of the navigation bar). Next, insert the class key emailed to you by your instructor. You will be registered to the class and may immediately begin providing data.</p>
+    <h2>If you are a soon-to-be instructor:</h2>
+    <p>Register an account (if you haven't already done so) and navigate to MY ACCOUNT (the upper-right of the navigation bar). Use the drop-down menu and select CHANGE MY ACCOUNT TYPE. From there, insert the instructor key provided to you by an administrator and send a message to them (perhaps using the site's MESSAGE functionality in the upper-left of the navigation bar) asking them to create a class for you. After the administrator has done so, you will be able to view your students and their progress from the INSTRUCTORS page.</p>
+    </div>
+    <br>
+    <hr>
 
     <div class="login-page-box">
         <div class="table-wrapper">

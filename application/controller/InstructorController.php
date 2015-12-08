@@ -19,9 +19,7 @@ class InstructorController extends Controller
      */
     public function index()
     {
-	    $this->View->render('instructor/index', array(
-			    'users' => UserModel::getPublicProfilesOfAllStudents())
-	    );
+	    $this->View->render('instructor/index');
     }
 
 	public function actionAccountSettings()

@@ -1,28 +1,15 @@
 <div class="container">
-    <h1>Instructor/index</h1>
+    <h1>Instructor functionality</h1>
 
     <div class="box">
 
         <!-- echo out the system feedback (error and success messages) -->
         <?php $this->renderFeedbackMessages(); ?>
-
-        <h3>What happens here ?</h3>
-
-        <div>
-	This section will contain information and features only accessible to instructors. This should populate with pupils.
-        </div>
-	<a href="<?php echo Config::get('URL'); ?>student/index.php">student_list.php</a>
-	<?php 
-		if(isset($_GET['page'])){
-			$var = $_GET['page'];
-			if ($var == 'students.html')
-				include '/var/www/html/application/view/instructor/student_list.php';
-			
-			else
-				include '/var/www/html/our-html/Instructor Forms/' . $var;
-		}
-		else
-			include '/var/www/html/our-html/Instructor Forms/instructor.html';
-	?>
+	<ul>
+	<li><a href="<?= Config::get('URL') . 'all/index' ?>">Contribute data</a></li>
+	<li><a href="<?= Config::get('URL') . 'all/viewAnswers' ?>">View previous answers</a></li>
+	<li><a href="<?= Config::get('URL') . 'all/studentList' ?>">View students registered to class</a></li>
+	<li><a href="<?= Config::get('URL') . 'all/elevate' ?>">Become an administrator</a></li>
+	</ul>
     </div>
 </div>

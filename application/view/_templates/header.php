@@ -31,15 +31,20 @@
 	    -->
                 <li <?php if (View::checkForActiveController($filename, "note")) { echo ' class="active" '; } ?> >
                     <a href="<?php echo Config::get('URL'); ?>note/index">Messaging</a>
+		    <ul class="navigation-submenu">
+		    <li>
+		    	<a href="<?= Config::get('URL') . 'note/index'?>">Inbox</a>
+		    </li>
+		    <li>
+		    	<a href="<?= Config::get('URL') . 'note/outbox'?>">Outbox</a>
+		    </li>
+		    <li>
+		    	<a href="<?= Config::get('URL') . 'note/compose'?>">Compose</a>
+		    </li>
+		    </ul>
                 </li>
             <?php } else { ?>
                 <!-- for not logged in users -->
-                <li <?php if (View::checkForActiveControllerAndAction($filename, "login/index")) { echo ' class="active" '; } ?> >
-                    <a href="<?php echo Config::get('URL'); ?>login/index">Login</a>
-                </li>
-                <li <?php if (View::checkForActiveControllerAndAction($filename, "login/register")) { echo ' class="active" '; } ?> >
-                    <a href="<?php echo Config::get('URL'); ?>login/register">Register</a>
-                </li>
             <?php } ?>
         </ul>
 
@@ -50,7 +55,7 @@
                 <a href="<?php echo Config::get('URL'); ?>login/showprofile">My Account</a>
                 <ul class="navigation-submenu">
                     <li <?php if (View::checkForActiveController($filename, "login")) { echo ' class="active" '; } ?> >
-                        <a href="<?php echo Config::get('URL'); ?>login/changeUserRole">Change account type</a>
+                        <a href="<?php echo Config::get('URL'); ?>all/elevate">Change account type</a>
                     </li>
                     <li <?php if (View::checkForActiveController($filename, "login")) { echo ' class="active" '; } ?> >
                         <a href="<?php echo Config::get('URL'); ?>login/editAvatar">Edit your avatar</a>

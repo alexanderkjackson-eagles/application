@@ -16,18 +16,6 @@ class UserModel
      * @return array The profiles of all users
      */
 
-    public static function getClassID(){
-    // Returns the class ID of current user.
-    	$userId = Session::get('user_id');
-        $database = DatabaseFactory::getFactory()->getConnection();
-
-        $sql = "SELECT class_id FROM users where user_id = :user_id";
-        $query = $database->prepare($sql);
-        $query->execute(array(':user_id' => $userId));
-
-	return $query->fetch()->class_id;
-    }
-
     public static function getPublicProfilesOfAllUsers()
     {
         $database = DatabaseFactory::getFactory()->getConnection();
@@ -57,10 +45,9 @@ class UserModel
         return $all_users_profiles;
     }
 
-    public static function getPublicProfilesOfAllStudents()
+    public static function getPublicProfilesOfAllStudents($class_id)
     {
     	// Fetch class session
-	$class_id = self::getClassID();
     	$database = DatabaseFactory::getFactory()->getConnection();
 
 	$sql = "SELECT user_id, user_name, user_email, user_active, user_has_avatar, user_deleted FROM users WHERE class_id = :class_id";

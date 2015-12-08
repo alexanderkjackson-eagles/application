@@ -1,8 +1,8 @@
 <div class="container">
-	<h1>Inbox</h1>
+	<h1>Outbox</h1>
 	<?php 
 		$database = DatabaseFactory::getFactory()->getConnection();
-		$sql = "SELECT * FROM notes WHERE user_id = :user_id";
+		$sql = "SELECT * FROM notes WHERE sender_id = :user_id";
 		$query = $database->prepare($sql);
 		$query->execute(array(
 			':user_id' => Session::get('user_id')
@@ -14,7 +14,7 @@
                 <thead>
                 <tr>
                     <td>Note ID</td>
-		    <td>Sender</td>
+		    <td>Recipient</td>
                     <td>Message</td>
 		    <td>Delete?</td>
                 </tr>

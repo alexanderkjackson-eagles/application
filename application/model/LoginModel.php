@@ -16,6 +16,18 @@ class LoginModel
      *
      * @return bool success state
      */
+    public static function getClassID(){
+        // Returns the class ID of the user.
+        $userId = Session::get('user_id');
+        $database = DatabaseFactory::getFactory()->getConnection();
+
+        $sql = "SELECT class_id FROM users where user_id = :user_id";
+        $query = $database->prepare($sql);
+        $query->execute(array(':user_id' => $userId));
+
+        return $query->fetch()->class_id;
+	}
+ 
     public static function login($user_name, $user_password, $set_remember_me_cookie = null)
     {
         // we do negative-first checks here, for simplicity empty username and empty password in one line
@@ -240,6 +252,9 @@ class LoginModel
         Session::set('user_email', $user_email);
         Session::set('user_account_type', $user_account_type);
         Session::set('user_provider_type', 'DEFAULT');
+
+	// Set class_id
+	Session::set('class_id', self::getClassID());
 
         // get and set avatars
         Session::set('user_avatar_file', AvatarModel::getPublicUserAvatarFilePathByUserId($user_id));

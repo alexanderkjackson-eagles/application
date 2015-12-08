@@ -1,57 +1,23 @@
-   
-<head>
-	<script>
-	    var counter = 1;
-
-    var limit = 6;
-
-    function addInput(divName){
-
-         if (counter == limit)  {
-
-              alert("You have reached the limit of adding " + counter + " inputs");
-
-         }
-
-         else {
-
-              var newdiv = document.createElement('div');
-
-              newdiv.innerHTML = "Book " + (counter + 1) + " <br><input type='text' name='myInputs[]'>";
-
-              document.getElementById(divName).appendChild(newdiv);
-
-              counter++;
-
-         }
-
-    }
-	</script>
-</head>
-
+<div class="container">
+	<h1>Create a session</h1>
+	<div class="box">
+<?php $this->renderFeedbackMessages(); ?>
 <body>
-<h3>Create session</h3>
-
-
-   <script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
-
-    <form id="form1" method="POST" action="createSection.php">
+    <form action="processSession" method="post" enctype="multipart/form-data">
+    <p><strong>Number of Paragraphs to be Generated: </strong><br>
+    <input type='text' name='paragraphParameter' size='10' />
+    <p><strong>Name of class: </strong><br>
+    <input type='text' name='class_name' size='48' />
+    </p>
 			
     <div id="addSession">
-			<p><strong>Enter Instructor ID: </strong><br>
-			<input type='text' name='instructorID' size='10' />
-			</p>
-
-			<p><strong>Enter Number of Paragraphs to be Generated: </strong><br>
-			<input type='text' name='paragraphParameter' size='10' />
-			</p>
-		
-        Book 1<br><input type="text" name="myInputs[]">
-		
+    <?php $this->renderWithoutHeaderAndFooter("admin/instructorList"); ?>
     </div>
 
-         <input type="button" value="Add another Book ID" onClick="addInput('addSession');">
+	<?php $this->renderWithoutHeaderAndFooter("admin/bookList") ?>
 		 
-		<br><br><input type="submit" name="addbutton" value="Create Section" />
+		<br><br><input type="submit" />
     </form>
+	</div>
+</div>
 </body>

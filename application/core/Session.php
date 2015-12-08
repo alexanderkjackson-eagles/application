@@ -41,7 +41,9 @@ class Session
         if (isset($_SESSION[$key])) {
 			if (is_string($_SESSION[$key])) {
                 // filter the value for XSS vulnerabilities
-                Filter::XSSFilter($_SESSION[$key]);
+			if ($key == "Error-text") // Error-text is formatted, but set by the server. It is exempt from processing, which mangles it.
+				return $_SESSION[$key];
+			Filter::XSSFilter($_SESSION[$key]);
 				return $_SESSION[$key];
 			}
 			else {

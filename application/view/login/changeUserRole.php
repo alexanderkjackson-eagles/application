@@ -19,7 +19,7 @@
         <h2>Currently, your account type is: <?php $userType = Session::get('user_account_type'); 
 		switch(Session::get('user_account_type')) {
 			case 1:
-				echo "Pupil.";
+				echo "Student.";
 				break;
 			case 2:
 				echo "Instructor.";

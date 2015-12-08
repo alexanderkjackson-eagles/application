@@ -28,6 +28,21 @@ class NoteController extends Controller
             'notes' => NoteModel::getAllNotes()
         ));
     }
+    
+    public function inbox()
+    {
+    	$this->View->render('note/inbox');
+    }
+
+    public function outbox()
+    {
+    	$this->View->render('note/outbox');
+    }
+
+    public function compose()
+    {
+        $this->View->render('note/compose');
+    }
 
     /**
      * This method controls what happens when you move to /dashboard/create in your app.
@@ -36,8 +51,12 @@ class NoteController extends Controller
      */
     public function create()
     {
-        NoteModel::createNote(Request::post('note_text'));
-        Redirect::to('note');
+    	$this->View->render('note/noteProcessor', array(
+		'data' => $_POST
+		));
+
+        //NoteModel::createNote(Request::post('note_text'));
+        //Redirect::to('note');
     }
 
     /**
