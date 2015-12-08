@@ -13,7 +13,7 @@
         </div>
 	-->
 	<!-- <?php AdminController::checkUpdate() ?> -->
-	<a href="<?php echo Config::get('URL'); ?>index/index">Index</a>
+	<a href="<?php echo Config::get('URL'); ?>index/sessionCreator.html">Index</a>
 	<div class="box">
 	<?php 
 		if(isset($_GET['page'])){ // If ?page= exists
