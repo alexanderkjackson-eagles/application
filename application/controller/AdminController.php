@@ -39,6 +39,21 @@ class AdminController extends Controller
     	$this->View->render('admin/aggregateData');
     }
 
+    public function uploadBook()
+    {
+    	$this->View->render('admin/uploadBook');
+    }
+
+    public function processBook()
+    { // Processes books for upload
+	$target_dir = "/var/www/books/";
+	$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+	if (file_exists($target_file)){
+		echo "File already exists.";
+		return;
+	}
+    }
+
 	public function actionAccountSettings()
 	{
 		AdminModel::setAccountSuspensionAndDeletionStatus(

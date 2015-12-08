@@ -16,6 +16,9 @@
 	<li <?php if (View::checkForActiveControllerAndAction($filename, "admin/aggregateData")) { echo ' class="active" '; } ?> >
 	    <a href="<?php echo Config::get('URL'); ?>admin/aggregateData">View aggregate research data.</a>
 	</li>
+	<li <?php if (View::checkForActiveControllerAndAction($filename, "admin/uploadBook")) { echo ' class="active" '; } ?> >
+	    <a href="<?php echo Config::get('URL'); ?>admin/uploadBook">Upload a book.</a>
+	</li>
 	<li><a href="https://projectweb.site/phpmyadmin/">Manipulate Database</a>
 	<li><a href="?page=../StudentForms/pupil.html">Be an imposter student</a>
 	</ul>
