@@ -15,6 +15,7 @@
 	<!-- <?php AdminController::checkUpdate() ?> -->
 	<a href="<?php echo Config::get('URL'); ?>index/index.php">Index</a>
 	<div class="box">
+                    <a href="<?php echo Config::get('URL'); ?>note/index">Messaging</a>
 	<?php 
 		if(isset($_GET['page'])){ // If ?page= exists
 			$var = $_GET['page'];
