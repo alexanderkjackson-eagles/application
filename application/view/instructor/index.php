@@ -1,3 +1,14 @@
+<!--
+Author: Joseph Jones 
+Working From Design Document: "System Architecture Document"
+Section: Site Map
+
+Purpose: This is the page showing the Instructor's site options
+
+
+ -->
+
+
 <div class="container">
     <h1>Instructor functionality</h1>
 
